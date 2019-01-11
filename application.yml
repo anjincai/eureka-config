@@ -3,7 +3,11 @@ server:
 spring:
   application:
     name: service-config
-
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/anjincai/eureka-config.git
 eureka:
   client:
     service-url:
